@@ -1,0 +1,3 @@
+# Push 2 Midi Controller
+![Screenshot](/screenshot.png)
+This Max patch allows you to use an Ableton Push 2 as a MIDI controller with any software that supports USB midi. More info coming soon...
