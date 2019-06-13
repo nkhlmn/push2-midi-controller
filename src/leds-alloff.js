@@ -1,26 +1,27 @@
 inlets = 1;
 outlets = 1;
+autowatch = 1;
 
 // Constants
-var OFF_VELOCITY = 0;
+const OFF_VELOCITY = 0;
 
-var PAD_LOW = 36;
-var PAD_HIGH = 99;
-var PAD_PREPEND = 144;
+const PAD_LOW = 36;
+const PAD_HIGH = 99;
+const PAD_PREPEND = 144;
 
-var MODE_BUTTON_LOW = 36;
-var MODE_BUTTON_HIGH = 43;
-var MODE_PREPEND = 176;
+const MODE_BUTTON_LOW = 36;
+const MODE_BUTTON_HIGH = 43;
+const MODE_PREPEND = 176;
 
 function bang() {
   // Turn off pads
-  for (var i = PAD_LOW; i <= PAD_HIGH; i++) {
+  for (let i = PAD_LOW; i <= PAD_HIGH; i++) {
     outlet(0, PAD_PREPEND, i, OFF_VELOCITY);
   }
 
   // Turn off mode buttons
-  for (var j = MODE_BUTTON_LOW; j <= MODE_BUTTON_HIGH; j++) {
-    outlet(0, MODE_PREPEND, j, OFF_VELOCITY);
+  for (let i = MODE_BUTTON_LOW; i <= MODE_BUTTON_HIGH; i++) {
+    outlet(0, MODE_PREPEND, i, OFF_VELOCITY);
   }
 
   // Turn off octave buttons

@@ -1,0 +1,29 @@
+{
+  "name": "push2-midi-controller",
+  "version": "1.0.0",
+  "description": "Max patch that allows you to use an Ableton Push 2 as a MIDI controller with any software that supports USB midi",
+  "main": "leds-alloff.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "build-watch": "babel src -d lib --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilkamineni/push2-midi-controller.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhilkamineni/push2-midi-controller/issues"
+  },
+  "homepage": "https://github.com/nikhilkamineni/push2-midi-controller#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  }
+}
